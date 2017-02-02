@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    color: #ffffff;
+    font-family: Courier New, Courier, monospace;
+    padding-top: 120px;
+}
+body.single-menu {
+    padding-top: 30px;
+}
+.transformable {
+    -webkit-transition: transform 300ms ease-in-out;
+    -moz-transition: transform 300ms ease-in-out;
+    -o-transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.transformable.moved-up {
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -o-transform: translateY(-60px);
+    transform: translateY(-60px);
+}
+.navbar {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+#menu-main {
+    top: 0;
+    font-size: 2em;
+    text-align: center;
+    line-height: 2em;
+}
+#in-page-nav {
+    top: 60px;
+}
+#in-page-nav.hidden {
+    display: none;
+}
+.in-page-nav-item {
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.in-page-nav-item:hover,
+.in-page-nav-item.active {
+    font-weight: bold;
+}
+.in-page-nav-marker {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 2em;
+    font-weight: 200;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+section.large {
+    height: 1280px;
+}
+section.small {
+    height: 640px;
+}
+.orange {
+    background-color: #ffc107;
+}
+.grey {
+    background-color: #9e9e9e;
+}
+.green {
+    background-color: #009688;
+}
+.blue {
+    background-color: #2196f3;
+}
+.red {
+    background-color: #f44336;
+}
+.purple {
+    background-color: #9c27b0;
+}
